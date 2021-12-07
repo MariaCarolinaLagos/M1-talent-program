@@ -1,0 +1,18 @@
+header
+    section
+            h1(tabindex = "0") Make Huge Moves
+            div    
+                select(name='Language')
+                    option(value='' disabled selected role ="tablist" aria-label = "Select language") Language
+                    option(value='' role ="tab" aria-label = "Select spanish language") ES
+                    option(value='' role ="tab" aria-label = "Select english language") EN
+                select(name='Currency')
+                    option(value='' disabled selected role ="tablist" aria-label = "Select currency") Currency
+                    option(value='' role = "tab" aria-label = "Select dollar currency") USD
+                    option(value='' role = "tab" aria-label = "Select colombian peso currency") COP
+            a       
+                img(src="/resources/Huge.svg", alt="Logo Huge Inc")
+            nav(role = "tablist" aria-label = "main menu")
+                each item in pages
+                    a(href="") #{item}
+                    br

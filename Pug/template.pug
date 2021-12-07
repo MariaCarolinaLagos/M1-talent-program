@@ -1,0 +1,15 @@
+doctype html
+html(lang = "es")
+    head
+        meta(charset="utf-8" )
+        block config
+            include ../Pug/config
+        block head
+            title= page_title  + " | " + page
+    body
+        block header
+            include ../Pug/header.pug
+        block content
+            include ../Pug/content.pug
+        block footer
+            include ../Pug/footer.pug
