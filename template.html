@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/resources/Huge.svg">
+    <link rel="stylesheet" href="/resources/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="/resources/header.js" defer></script>
+    <title>Home | Huge</title>
+  </head>
+  <body>
+    <header class="header">
+      <section>
+        <div class="header__topbar">
+          <h1 class="header__topbar__title" tabindex="0">Make Huge Moves </h1>
+          <select class="header__topbar__select header__topbar__select--select" name="Language">
+            <option value="" disabled selected role="tablist" aria-label="Select language">Language</option>
+            <option value="" role="tab" aria-label="Select spanish language">ES</option>
+            <option value="" role="tab" aria-label="Select english language">EN</option>
+          </select>
+          <select class="header__topbar__select header__topbar__select--select" name="Currency">
+            <option value="" disabled selected role="tablist" aria-label="Select currency">Currency</option>
+            <option value="" role="tab" aria-label="Select dollar currency">USD</option>
+            <option value="" role="tab" aria-label="Select colombian peso currency">COP</option>
+          </select>
+        </div>
+        <nav class="header_mainmenu__nav"><a class="header__topbar__linklogo" href="https://www.hugeinc.com/"><img class="header__topbar__linklogo" tabindex="0" src="/resources/Huge.svg" alt="Logo Huge Inc"></a>
+          <ul class="header_mainmenu__menu-items">
+            <li><a href="#">program</a></li>
+            <li><a href="#">tech </a></li>
+            <li><a href="#">talent</a></li>
+          </ul><span class="header_mainmenu_icon"><i class="fa fa-bars"></i></span>
+          <!-- nav(role = "tablist" aria-label = "main menu")
+          // each item in pages
+              a(href="") 
+              br 
+          -->
+        </nav>
+      </section>
+    </header>
+    <section class="content__mainarea">
+      <div class="content__mainarea__slide">
+        <div class="content__mainarea__banner">
+          <h2>Program</h2>
+        </div>
+      </div>
+      <div class="content__mainarea__slide">
+        <div class="content__mainarea__banner">
+          <h2>Tech</h2>
+        </div>
+      </div>
+      <div class="content__mainarea__slide">
+        <div class="content__mainarea__banner">
+          <h2>Talent</h2>
+        </div>
+      </div>
+    </section>
+    <!-- img(src="/resources/PROGRAM.jpg", alt="banner figuras geometricas")-->
+    <!-- p(tabindex ="0") Program-->
+    <!-- img(src="/resources/TECH.jpg", alt="banner digital")-->
+    <!-- p(tabindex ="0") Tech-->
+    <!-- img(src="/resources/TALENT.jpg", alt="banner de espacio de trabajo")-->
+    <!-- p(tabindex ="0") Talent-->
+    <section aria-label="Contact us">
+      <h1 tabindex="0">Contact us</h1>
+      <form action=""><br>
+        <label for="name" tabindex="0">Nombres </label>
+        <input type="text" name="name" placeholder="Nombres"><br>
+        <label for="lastname" tabindex="0">Apellidos</label>
+        <input type="text" placeholder="Apellidos"><br>
+        <label for="email" tabindex="0">E-mail</label>
+        <input type="email" placeholder="E-mail"><br>
+        <label for="description" tabindex="0">Mensaje</label>
+        <textarea name="description" cols="30" rows="10" placeholder="Mensaje"></textarea><br>
+        <button>Enviar</button>
+      </form>
+    </section>
+    <h1 tabindex="0">Powered by the M1 talent program at Huge</h1>
+  </body>
+</html>

@@ -1,18 +1,40 @@
-<img src="/resources/PROGRAM.jpg" alt="banner figuras geometricas"/>
-<p tabindex="0">Program</p><img src="/resources/TECH.jpg" alt="banner digital"/>
-<p tabindex="0">Tech</p><img src="/resources/TALENT.jpg" alt="banner de espacio de trabajo"/>
-<p tabindex="0">Talent</p>
-<section aria-label="Contact us">
-  <h1 tabindex="0">Contact us</h1>
-  <form action=""><br/>
-    <label for="name" tabindex="0">Nombres </label>
-    <input type="text" name="name" placeholder="Nombres"/><br/>
-    <label for="lastname" tabindex="0">Apellidos</label>
-    <input type="text" placeholder="Apellidos"/><br/>
-    <label for="email" tabindex="0">E-mail</label>
-    <input type="email" placeholder="E-mail"/><br/>
-    <label for="description" tabindex="0">Mensaje</label>
-    <textarea name="description" cols="30" rows="10" placeholder="Mensaje"></textarea><br/>
-    <button>Enviar</button>
+
+<section class="content__mainarea">
+  <div class="content__mainarea__slide">
+    <div class="content__mainarea__banner">
+      <h2>Program</h2>
+    </div>
+  </div>
+  <div class="content__mainarea__slide">
+    <div class="content__mainarea__banner">
+      <h2>Tech</h2>
+    </div>
+  </div>
+  <div class="content__mainarea__slide">
+    <div class="content__mainarea__banner">
+      <h2>Talent</h2>
+    </div>
+  </div>
+</section>
+<section> 
+  <form class="content__contactform" aria-label="Contact us">
+    <h2 class="content__contactform__title" tabindex="0">Contact us  </h2>
+    <div class="content__contactform__formgroup">
+      <input class="content__contactform__forminput" type="text" placeholder="Nombres:"/>
+      <label class="content__contactform__formlabel" for="name" tabindex="0">Nombres</label><span class="content__contactform__formline"></span>
+    </div>
+    <div class="content__contactform__formgroup">
+      <input class="content__contactform__forminput" type="text" placeholder="Apellidos:"/>
+      <label class="content__contactform__formlabel" for="lastname" tabindex="0">Apellidos</label><span class="content__contactform__formline"></span>
+    </div>
+    <div class="content__contactform__formgroup">
+      <input class="content__contactform__forminput" type="email" placeholder="E-mail:"/>
+      <label class="content__contactform__formlabel" for="email" tabindex="0">E-mail</label><span class="content__contactform__formline"></span>
+    </div>
+    <div class="content__contactform__formgroup">
+      <textarea class="content__contactform__formtextarea" name="description" cols="30" rows="10" placeholder="Mensaje"></textarea>
+      <label class="content__contactform__formlabel" for="description" tabindex="0">Mensaje</label><span class="content__contactform__formline"></span>
+    </div>
+    <input class="content__contactform__formsubmit" type="submit" placeholder="Enviar"/>
   </form>
 </section>
