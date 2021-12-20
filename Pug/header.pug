@@ -1,18 +1,24 @@
-header
+header(class="header")
     section
-            h1(tabindex = "0") Make Huge Moves
-            div    
-                select(name='Language')
-                    option(value='' disabled selected role ="tablist" aria-label = "Select language") Language
-                    option(value='' role ="tab" aria-label = "Select spanish language") ES
-                    option(value='' role ="tab" aria-label = "Select english language") EN
-                select(name='Currency')
-                    option(value='' disabled selected role ="tablist" aria-label = "Select currency") Currency
-                    option(value='' role = "tab" aria-label = "Select dollar currency") USD
-                    option(value='' role = "tab" aria-label = "Select colombian peso currency") COP
-            a       
-                img(src="/resources/Huge.svg", alt="Logo Huge Inc")
-            nav(role = "tablist" aria-label = "main menu")
-                each item in pages
-                    a(href="") #{item}
-                    br
+        div(class="header__topbar")
+            h1(class="header__topbar__title" tabindex = "0") Make Huge Moves 
+            select(class="header__topbar__select header__topbar__select--select" name='Language')
+                option(class="header__topbar__option" value='' disabled selected role ="tablist" aria-label = "Select language") Language
+                option(value='' role ="tab" aria-label = "Select spanish language") ES
+                option(class="header__topbar__option" value='' role ="tab" aria-label = "Select english language") EN
+            select(class="header__topbar__select header__topbar__select--select" name='Currency')
+                option(class="header__topbar__option" value='' disabled selected role ="tablist" aria-label = "Select currency") Currency
+                option(class="header__topbar__option" value='' role = "tab" aria-label = "Select dollar currency") USD
+                option(class="header__topbar__option" value='' role = "tab" aria-label = "Select colombian peso currency") COP
+        nav(class="header_mainmenu__nav")
+            a(class="header__topbar__linklogo" href="https://www.hugeinc.com/")
+                img(class="header__topbar__linklogo" tabindex = "0" src="/resources/Huge.svg", alt="Logo Huge Inc") 
+            ul(class="header_mainmenu__menu-items")
+                li
+                    a(href="#") program
+                li
+                    a(href="#") tech 
+                li
+                    a(href="#") talent
+            span(class="header_mainmenu_icon")
+                i(class="fa fa-bars")
