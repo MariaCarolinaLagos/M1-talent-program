@@ -1,5 +1,23 @@
 /*HEADER CSS*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container > * {
+    flex: 100%;
+}
+
+.header {
+    display: flex;
+}
 .header_mainmenu__nav {
     background-color: #6B5586;
     height: 75px;
@@ -14,7 +32,6 @@
     height: 80px;
     width: 9vw;
     display: flex;
-    margin-left: -22px;
 }
 
 .header__topbar {
@@ -99,7 +116,7 @@ ul.show{
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     .header__topbar__linklogo {
         margin-left: -4px;
     }
@@ -139,16 +156,6 @@ ul.show{
     .header_mainmenu_icon {
         font-size: 25px;
         padding-left: 35px;
-    }
-}
-
-@media screen and (max-width: 768px) and (min-width: 1023px) and (orientation: landscape) {
-    .header_mainmenu__menu-items li {
-        margin: 5px 0 0 0;
-    }
-    .header_mainmenu__menu-items {
-        overflow: scroll;
-        height: calc(100% - 65px);
     }
 }
 
@@ -294,3 +301,64 @@ ul.show{
     align-items: center;
 }
 
+/* breakpoint tablet */
+
+@media screen and (min-width:768px) {
+
+    .content__contactform {
+        background-color: #e5e5f7;
+        background-image: radial-gradient(#6b5586 0.5px, #e5e5f7 0.5px);
+        margin: auto;
+        padding: 4.5em 3em;
+        border-radius: 10px;
+        box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
+        text-align: center;
+    }
+
+    .content__contactform__formsubmit {
+        margin-top: -11%;
+    }
+
+    .content__contactform__formtextarea {
+        height: 50%;
+    }
+    .content__contactform__formlabel {
+        margin-top: -8%;
+    }
+
+
+    .container__form {
+        display: flex;
+        justify-content: center;
+        height: 63vh;
+        align-items: center;
+    }
+    
+}
+
+/* breakpoint desktop */
+
+@media screen and (min-width: 1024px) {
+
+    .header__topbar {
+        height: 24px;
+        width: 61vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-left: 435px;
+    }
+
+    .header_mainmenu__menu-items li {
+        margin: 5px 0 0 0;
+    }
+    .header_mainmenu__menu-items {
+        height: calc(130% - 52px);
+    }
+
+    .content__contactform {
+        display: flex;
+        flex-flow: column;
+        height: 96%;
+    }
+}
